@@ -24,6 +24,10 @@ npm -v
 ```
 If installed correctly, you will see the version of Node returned.
 
+*Wait… What is npm?*
+
+Great question! Npm (node package manager) is the default package manager for Node that hosts thousands of packages for free. Don’t worry; npm was automatically installed when you downloaded Node!
+
 ## Step 2: Clone Git Repo
 
 Download this repository.
@@ -33,15 +37,24 @@ git clone https://github.com/danielepsvc/frontend-challenge.git
 
 ## Step 3: Install Dependencies
 
-This line of code will install Express and EJS
+First go into project folder by using the command
+
+```
+cd frontend-challenge
+```
+
+Then install project dependencies with 
 
 ```
 npm install 
 ```
 
-*Wait… What is npm?*
+This will install Express and EJS 
 
-Great question! Npm (node package manager) is the default package manager for Node that hosts thousands of packages for free. Don’t worry; npm was automatically installed when you downloaded Node in Step 1!
+*What is Express ?*
+
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+
 
 *And EJS...*
 
