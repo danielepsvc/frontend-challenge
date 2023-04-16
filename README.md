@@ -31,28 +31,21 @@ Download this repository.
 git clone https://github.com/danielepsvc/frontend-challenge.git
 ```
 
-## Step 3: Install Express
+## Step 3: Install Dependencies
 
-Once the two files are added to your project, you are set to install Express.
-You can check to see what directory you are currently in by entering “pwd” on your command line. 
-Once confirming you are in the correct directory, install Express by running the command below.
+This line of code will install Express and EJS
 
 ```
-npm install express --save
+npm install 
 ```
 
 *Wait… What is npm?*
 
 Great question! Npm (node package manager) is the default package manager for Node that hosts thousands of packages for free. Don’t worry; npm was automatically installed when you downloaded Node in Step 1!
 
+*And EJS...*
 
-## Step 4: Install EJS
 EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. No religiousness about how to organize things. No reinvention of iteration and control-flow. It's just plain JavaScript.
-
-```
-npm install ejs --save
-```
-
 
 # 🚀 Building and Running 
 
