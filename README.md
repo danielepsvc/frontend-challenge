@@ -78,7 +78,7 @@ console.log('Server is listening on port 8080');
 
 ## Step 2: Check it out!
 
-Finally, go to Chrome and enter “localhost:3000” in your browser.
+Finally, go to Chrome and enter “localhost:8080” in your browser.
 You did it!
 
 # Recap
