@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "name": "frontend-challenge",
+  "description": "Creation of three simple layouts using HTML, Bootstrap 5 and SCSS and a bit of javascript for basic navigation. Layouts should be responsive and optimized for larger devices, such as HD, Full HD, and 4k monitors.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielepsvc/frontend-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielepsvc/frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/danielepsvc/frontend-challenge#readme"
+}

@@ -1,0 +1,55 @@
+/*    
+1280 × 720
+HD (1366 x 768),
+Full HD (1920 x 1080)
+4K (3840 x 2160) 
+
+*/
+
+
+@import 'variables.scss';
+
+
+* {
+	margin: 0;
+}
+body {
+  font-size: 1rem;
+  font-family: $font-family;
+}
+
+
+.container {
+  max-width: $breakpoint-4k;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $column-gutter;
+  padding-left: $column-gutter;
+
+  @media screen and (min-width: $breakpoint-hd) {
+    max-width: $breakpoint-hd;
+  }
+
+  @media screen and (min-width: $breakpoint-full-hd) {
+    max-width: $breakpoint-full-hd;
+  }
+
+  /* Add additional media queries for other larger devices as needed */
+}
+
+
+/* Column classes for different screen sizes */
+.col {
+  @media screen and (min-width: $breakpoint-hd) {
+    
+  }
+
+  @media screen and (min-width: $breakpoint-full-hd) {
+    
+  }
+
+  @media screen and (min-width: $breakpoint-4k) {
+    
+  }
+
+}

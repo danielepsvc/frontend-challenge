@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*    
+1280 × 720
+HD (1366 x 768),
+Full HD (1920 x 1080)
+4K (3840 x 2160) 
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap");
+/* Set your desired column gutter size */
+/* Set your desired HD breakpoint */
+/* Set your desired Full HD breakpoint */
+/* Set your desired 4K breakpoint */
+/* HOME */
+/* MAIN */
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 3840px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  /* Add additional media queries for other larger devices as needed */
+}
+@media screen and (min-width: 1366px) {
+  .container {
+    max-width: 1366px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
+/* Column classes for different screen sizes *//*# sourceMappingURL=mainstyle.css.map */

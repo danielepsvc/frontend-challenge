@@ -1,0 +1,301 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap");
+/* Set your desired column gutter size */
+/* Set your desired HD breakpoint */
+/* Set your desired Full HD breakpoint */
+/* Set your desired 4K breakpoint */
+/* HOME */
+/* MAIN */
+/*    
+1280 × 720
+HD (1366 x 768),
+Full HD (1920 x 1080)
+4K (3840 x 2160) 
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap");
+/* Set your desired column gutter size */
+/* Set your desired HD breakpoint */
+/* Set your desired Full HD breakpoint */
+/* Set your desired 4K breakpoint */
+/* HOME */
+/* MAIN */
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 3840px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  /* Add additional media queries for other larger devices as needed */
+}
+@media screen and (min-width: 1366px) {
+  .container {
+    max-width: 1366px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
+/* Column classes for different screen sizes */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+video {
+  position: fixed;
+  top: 18vh;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  -moz-filter: brightness(40%);
+  -o-filter: brightness(40%);
+  -ms-filter: brightness(40%);
+  filter: brightness(40%);
+}
+
+@media screen and (min-width: 1920px) {
+  h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+}
+@media screen and (min-width: 3840px) {
+  h1 {
+    font-size: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+}
+@media screen and (min-width: 3840px) {
+  h2 {
+    font-size: 4.5rem;
+  }
+}
+
+.box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box a {
+  text-decoration: none;
+  color: #868686;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.box i {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.box:hover a {
+  color: white;
+}
+@media screen and (min-width: 1366px) {
+  .box a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  .box i {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .box a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .box i {
+    font-size: 5rem;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .box a {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+  .box i {
+    font-size: 8rem;
+    padding: 3rem;
+  }
+}
+
+/* Equal Heights for OwlCarousel 2 */
+.owl-carousel {
+  background-image: linear-gradient(#000, #222222);
+}
+.owl-carousel .owl-stage {
+  display: flex;
+  height: 18vh;
+  padding: 1rem;
+}
+.owl-carousel .owl-item {
+  display: flex;
+  flex: 1 0 auto;
+}
+.owl-carousel .caption {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+.owl-carousel .flex-text {
+  flex-grow: 1;
+}
+.owl-carousel .thumbnail {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.owl-carousel .owl-nav {
+  position: fixed;
+  top: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+}
+@media screen and (min-width: 3840px) {
+  .owl-carousel .owl-nav {
+    top: 8.5rem;
+  }
+}
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  display: block;
+  padding: 0 0.3em !important;
+  font-size: 3em;
+  margin: 0;
+  cursor: pointer;
+  color: #868686;
+}
+.owl-carousel .owl-prev i,
+.owl-carousel .owl-next i {
+  font-size: 2rem;
+}
+@media screen and (min-width: 1366px) {
+  .owl-carousel .owl-prev i,
+  .owl-carousel .owl-next i {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .owl-carousel .owl-prev i,
+  .owl-carousel .owl-next i {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .owl-carousel .owl-prev i,
+  .owl-carousel .owl-next i {
+    font-size: 7rem;
+  }
+}
+.owl-carousel .owl-prev:hover,
+.owl-carousel .owl-next:hover {
+  color: white;
+}
+.owl-carousel .owl-next {
+  right: 100%;
+}
+
+.mini-container {
+  width: 55vh;
+  display: inline-block;
+  position: absolute;
+  bottom: 3vh;
+  right: 5vh;
+}
+
+.card {
+  height: 120px;
+  display: flex;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: row;
+  text-align: center;
+}
+.card .footnote {
+  font-size: x-small;
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card div:first-child {
+  width: 60%;
+}
+.card div:last-child {
+  width: 100%;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 1366px) {
+  .card {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .card {
+    font-size: 4rem;
+    height: 160px;
+  }
+  .card img {
+    height: 160px;
+  }
+  .card h4 {
+    font-size: 1.9rem;
+  }
+  .card h6 {
+    font-size: 1.4rem;
+  }
+  .card .footnote {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .card {
+    font-size: 7rem;
+    height: 250px;
+  }
+  .card img {
+    height: 250px;
+  }
+  .card h4 {
+    font-size: 3.5rem;
+  }
+  .card h6 {
+    font-size: 2.5rem;
+  }
+  .card .footnote {
+    font-size: xx-large;
+  }
+}/*# sourceMappingURL=main.css.map */
