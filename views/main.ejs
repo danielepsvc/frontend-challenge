@@ -14,15 +14,7 @@
 
     <!-- Vendor CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://rawgit.com/bryanwillis/a3d4935336174c9d9deb58dff040207d/raw/d06b38aa36e868bc70d022293f4c3bd8600b50a3/flexbox-bs3.css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-news-feed/1.0.0/bootstrap-news-feed.min.css">
 
     <!--link rel="stylesheet" href="./src/scss/mainstyle.css"-->
     <link rel="stylesheet" href="./src/scss/main.css">
@@ -31,16 +23,24 @@
 
 <body>
 
-
-
     <div id="owl-demo-2" class="owl-carousel owl-theme">
+
+
+        <article class="thumbnail item">
+            <div class="box">
+                <a href="<%= app0URL; %>">
+                    <i data-feather="<%= app0Icon; %>"></i>
+                    <p><%= app0Title; %></p>
+                </a>
+            </div>
+        </article>
+
+
         <article class="thumbnail item">
             <div class="box">
                 <a href="<%= app1URL; %>">
-                    <i class="<%= app1Icon; %>"></i>
-                    <p>
-                        <%= app1Title; %>
-                    </p>
+                    <i data-feather="<%= app1Icon; %>"></i>
+                    <p><%= app1Title; %></p>
                 </a>
             </div>
         </article>
@@ -48,10 +48,8 @@
         <article class="thumbnail item">
             <div class="box">
                 <a href="<%= app2URL; %>">
-                    <i class="<%= app2Icon; %>"></i>
-                    <p>
-                        <%= app2Title; %>
-                    </p>
+                    <i data-feather="<%= app2Icon; %>"></i>
+                    <p><%= app2Title; %></p>
                 </a>
             </div>
         </article>
@@ -59,10 +57,8 @@
         <article class="thumbnail item">
             <div class="box">
                 <a href="<%= app3URL; %>">
-                    <i class="<%= app3Icon; %>"></i>
-                    <p>
-                        <%= app3Title; %>
-                    </p>
+                    <i data-feather="<%= app3Icon; %>"></i>
+                    <p><%= app3Title; %></p>
                 </a>
             </div>
         </article>
@@ -70,10 +66,8 @@
         <article class="thumbnail item">
             <div class="box">
                 <a href="<%= app4URL; %>">
-                    <i class="<%= app4Icon; %>"></i>
-                    <p>
-                        <%= app4Title; %>
-                    </p>
+                    <i data-feather="<%= app4Icon; %>"></i>
+                    <p><%= app4Title; %></p>
                 </a>
             </div>
         </article>
@@ -81,10 +75,8 @@
         <article class="thumbnail item">
             <div class="box">
                 <a href="<%= app5URL; %>">
-                    <i class="<%= app5Icon; %>"></i>
-                    <p>
-                        <%= app5Title; %>
-                    </p>
+                    <i data-feather="<%= app5Icon; %>"></i>
+                    <p><%= app5Title; %></p>
                 </a>
             </div>
         </article>
@@ -92,10 +84,8 @@
         <article class="thumbnail item">
             <div class="box">
                 <a href="<%= app6URL; %>">
-                    <i class="<%= app6Icon; %>"></i>
-                    <p>
-                        <%= app6Title; %>
-                    </p>
+                    <i data-feather="<%= app6Icon; %>"></i>
+                    <p><%= app6Title; %></p>
                 </a>
             </div>
         </article>
@@ -161,22 +151,14 @@
     </div>
 
 
-
-
-
-
-
-
-
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
-
-    <script src="js/newsbox/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
-    <script src="./src/js/main.js"></script>
-
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../src/js/main.js"></script>
+	<script src="../src/js/featherIcons.js"></script>
+   
 
 </body>
 

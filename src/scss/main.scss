@@ -34,6 +34,8 @@ h1 {
 
   @media screen and (min-width: $breakpoint-4k) {
     font-size: 6.5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 }
 
@@ -57,12 +59,12 @@ h2 {
     text-decoration: none;
     color: #868686;
     font-size: 1rem;
-    padding: 1rem;
   }
 
-  i {
-    font-size: 2.5rem;
-    padding: 1rem;
+  svg {
+    height: 75px;
+    padding: 10px;
+    width: auto;
   }
 
   &:hover {
@@ -75,10 +77,9 @@ h2 {
   @media screen and (min-width: $breakpoint-hd) {
     a {
       font-size: 1.2rem;
-      padding: 0.5rem;
     }
 
-    i {
+    svg {
       font-size: 2.5rem;
       padding: 1rem;
     }
@@ -87,10 +88,9 @@ h2 {
   @media screen and (min-width: $breakpoint-full-hd) {
     a {
       font-size: 1.5rem;
-      padding: 0.5rem;
     }
 
-    i {
+    svg {
       font-size: 5rem;
       padding: 1rem;
     }
@@ -99,10 +99,9 @@ h2 {
   @media screen and (min-width: $breakpoint-4k) {
     a {
       font-size: 3rem;
-      padding: 0.5rem;
     }
 
-    i {
+    svg {
       font-size: 8rem;
       padding: 3rem;
     }
@@ -113,6 +112,7 @@ h2 {
 
 .owl-carousel {
   background-image: linear-gradient(#000, #222222);
+  background-color: rgba($bg-color, $opacity);
 
   .owl-stage {
     display: flex;
@@ -146,14 +146,16 @@ h2 {
     flex-direction: row;
 
     @media screen and (min-width: $breakpoint-4k) {
-      top: 8.5rem;
+      top: 8rem;
+      padding-left: 1rem;
+      padding-right: 4rem;
     }
   }
 
   .owl-prev,
   .owl-next {
     display: block;
-    padding: 0 0.3em !important;
+    padding: 0 0.3rem;
     font-size: 3em;
     margin: 0;
     cursor: pointer;
@@ -182,6 +184,10 @@ h2 {
   .owl-next {
     right: 100%;
   }
+
+  @media screen and (min-width: $breakpoint-4k) {
+    padding: 0 1.5rem;
+  }
 }
 
 .mini-container {
@@ -190,6 +196,10 @@ h2 {
   position: absolute;
   bottom: 3vh;
   right: 5vh;
+
+  @media screen and (min-width: $breakpoint-4k) {
+    width: 65vh;
+  }
 }
 
 .card {
@@ -248,22 +258,23 @@ h2 {
 
   @media screen and (min-width: $breakpoint-4k) {
     font-size: 7rem;
-    height: 250px;
+    height: 350px;
+    margin-bottom: 3rem;
 
     img {
-      height: 250px;
+      height: 350px;
     }
 
     h4 {
-      font-size: 3.5rem;
+      font-size: 5.5rem;
     }
 
     h6 {
-      font-size: 2.5rem;
+      font-size: 4rem;
     }
 
     .footnote {
-      font-size: xx-large;
+      font-size: 2.5rem;
     }
   }
 }

@@ -12,12 +12,13 @@ const homeRoute = require("./pages/home.js");
 app.get('/', homeRoute);
 app.get('/home', homeRoute);
 
-
 // Render Room page
 const roomRoute = require("./pages/room.js");
 app.get('/room', roomRoute);
 
-
+// Render Weather page
+const weatherRoute = require("./pages/weather.js");
+app.get('/weather', weatherRoute);
 
 app.listen(8080);
 console.log('Server is listening on port 8080');

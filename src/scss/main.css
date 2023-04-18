@@ -6,6 +6,7 @@
 /* Set your desired 4K breakpoint */
 /* HOME */
 /* MAIN */
+/* WEATHER */
 /*    
 1280 × 720
 HD (1366 x 768),
@@ -20,6 +21,7 @@ Full HD (1920 x 1080)
 /* Set your desired 4K breakpoint */
 /* HOME */
 /* MAIN */
+/* WEATHER */
 * {
   margin: 0;
 }
@@ -61,7 +63,7 @@ body {
 /* Style the video: 100% width and height to cover the entire window */
 video {
   position: fixed;
-  top: 18vh;
+  top: 17vh;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -81,6 +83,8 @@ video {
 @media screen and (min-width: 3840px) {
   h1 {
     font-size: 6.5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 }
 
@@ -106,11 +110,11 @@ video {
   text-decoration: none;
   color: #868686;
   font-size: 1rem;
-  padding: 1rem;
 }
-.box i {
-  font-size: 2.5rem;
-  padding: 1rem;
+.box svg {
+  height: 75px;
+  padding: 10px;
+  width: auto;
 }
 .box:hover a {
   color: white;
@@ -118,9 +122,8 @@ video {
 @media screen and (min-width: 1366px) {
   .box a {
     font-size: 1.2rem;
-    padding: 0.5rem;
   }
-  .box i {
+  .box svg {
     font-size: 2.5rem;
     padding: 1rem;
   }
@@ -128,9 +131,8 @@ video {
 @media screen and (min-width: 1920px) {
   .box a {
     font-size: 1.5rem;
-    padding: 0.5rem;
   }
-  .box i {
+  .box svg {
     font-size: 5rem;
     padding: 1rem;
   }
@@ -138,9 +140,8 @@ video {
 @media screen and (min-width: 3840px) {
   .box a {
     font-size: 3rem;
-    padding: 0.5rem;
   }
-  .box i {
+  .box svg {
     font-size: 8rem;
     padding: 3rem;
   }
@@ -149,10 +150,11 @@ video {
 /* Equal Heights for OwlCarousel 2 */
 .owl-carousel {
   background-image: linear-gradient(#000, #222222);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .owl-carousel .owl-stage {
   display: flex;
-  height: 18vh;
+  height: 17vh;
   padding: 1rem;
 }
 .owl-carousel .owl-item {
@@ -182,13 +184,15 @@ video {
 }
 @media screen and (min-width: 3840px) {
   .owl-carousel .owl-nav {
-    top: 8.5rem;
+    top: 8rem;
+    padding-left: 1rem;
+    padding-right: 4rem;
   }
 }
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next {
   display: block;
-  padding: 0 0.3em !important;
+  padding: 0 0.3rem;
   font-size: 3em;
   margin: 0;
   cursor: pointer;
@@ -223,6 +227,11 @@ video {
 .owl-carousel .owl-next {
   right: 100%;
 }
+@media screen and (min-width: 3840px) {
+  .owl-carousel {
+    padding: 0 1.5rem;
+  }
+}
 
 .mini-container {
   width: 55vh;
@@ -230,6 +239,11 @@ video {
   position: absolute;
   bottom: 3vh;
   right: 5vh;
+}
+@media screen and (min-width: 3840px) {
+  .mini-container {
+    width: 65vh;
+  }
 }
 
 .card {
@@ -284,18 +298,19 @@ video {
 @media screen and (min-width: 3840px) {
   .card {
     font-size: 7rem;
-    height: 250px;
+    height: 350px;
+    margin-bottom: 3rem;
   }
   .card img {
-    height: 250px;
+    height: 350px;
   }
   .card h4 {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
   }
   .card h6 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   .card .footnote {
-    font-size: xx-large;
+    font-size: 2.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

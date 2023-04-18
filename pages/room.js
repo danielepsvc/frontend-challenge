@@ -2,27 +2,32 @@
 // Render Home page
 module.exports = (req, res) => {
     res.render('main', { 
-        app1Icon: "fa-solid fa-tv",
+
+        app0Icon: "cloud",
+		app0Title: "Weather",
+		app0URL: "./weather",
+
+        app1Icon: "tv",
 		app1Title: "TV & Entertainment",
 		app1URL: "#",
 
-		app2Icon: "fa-brands fa-youtube",
+		app2Icon: "youtube",
 		app2Title: "Youtube",
 		app2URL: "#",
 
-		app3Icon: "fa-brands fa-hubspot",
+		app3Icon: "airplay",
 		app3Title: "Connect",
 		app3URL: "#",
 
-		app4Icon: "fa-solid fa-utensils",
+		app4Icon: "coffee",
 		app4Title: "Dining & Bar",
 		app4URL: "#",
 
-		app5Icon: "fa-solid fa-hotel",
+		app5Icon: "home",
 		app5Title: "Hotel",
 		app5URL: "#",
 
-		app6Icon: "fa-solid fa-city",
+		app6Icon: "map",
 		app6Title: "City",
 		app6URL: "#",
 

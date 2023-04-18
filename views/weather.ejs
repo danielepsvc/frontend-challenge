@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniele Carvalho">
+
+    <link rel="shortcut icon" href="#" />
+
+    <title>Room</title>
+    <meta name="keywords" content="" />
+
+    <!-- Vendor CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--link rel="stylesheet" href="./src/scss/mainstyle.css"-->
+    <link rel="stylesheet" href="./src/scss/weather.css">
+
+</head>
+
+<body>
+
+
+    <h1>Weather</h1>
+
+
+    <nav class="nav">
+        <a href="#" class="nav-item is-active">Lisboa</a>
+        <a href="#" class="nav-item">Barcelona</a>
+        <a href="#" class="nav-item">Madrid</a>
+        <a href="#" class="nav-item">London</a>
+        <a href="#" class="nav-item">Paris</a>
+        <a href="#" class="nav-item">Melborne</a>
+      </nav>
+
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient"></div>
+            <div class="date-container">
+                <h2 class="date-dayname">Sunday</h2>
+                <span class="date-day">15 Jan 2019</span>
+                <i class="location-icon" data-feather="map-pin"></i>
+                <span class="location">Lisboa, PT</span>
+            </div>
+            <div class="weather-container">
+                <i class="weather-icon" data-feather="sun"></i>
+                <h1 class="weather-temp">25°C</h1>
+                <h3 class="weather-desc">Sunny</h3>
+            </div>
+        </div>
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <div class="precipitation">
+                        <span class="title">PRECIPITATION</span><span class="value">0 %</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity">
+                        <span class="title">HUMIDITY</span><span class="value">34 %</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="wind">
+                        <span class="title">WIND</span><span class="value">0 km/h</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-container">
+                <ul class="week-list">
+                    <li class="active">
+                        <i class="day-icon" data-feather="sun"></i>
+                        <span class="day-name">Monday</span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i>25°C /  45ºF</span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                    </li>
+                    <li>
+                        <i class="day-icon" data-feather="sun"></i>
+                        <span class="day-name">Tuesday</span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i>29°C/  65ºF</span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                    </li>
+                    </li>
+                    <li>
+                        <i class="day-icon" data-feather="cloud"></i>
+                        <span class="day-name">Wednesday</span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i>21°C/  61ºF</span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                    </li>
+                    <li>
+                        <i class="day-icon" data-feather="cloud-snow"></i>
+                        <span class="day-name">Thuesday</span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i>20°C/ 111ªF</span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                    </li>
+                    <li>
+                        <i class="day-icon" data-feather="cloud-rain"></i>
+                        <span class="day-name">Friday</span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i>29°C/ 123ªF</span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="../src/js/featherIcons.js"></script>
+    <script src="../src/js/tabs.js"></script>
+</body>
+
+</html>
