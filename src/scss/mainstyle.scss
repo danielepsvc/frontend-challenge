@@ -1,9 +1,7 @@
-/*    
-1280 × 720
+/*
 HD (1366 x 768),
 Full HD (1920 x 1080)
 4K (3840 x 2160) 
-
 */
 
 
@@ -34,11 +32,18 @@ body {
     max-width: $breakpoint-full-hd;
   }
 
+  @media screen and (min-width: $breakpoint-4k) {
+    max-width: $breakpoint-4k;
+  }
+
+
   /* Add additional media queries for other larger devices as needed */
 }
 
 
 /* Column classes for different screen sizes */
+
+/*
 .col {
   @media screen and (min-width: $breakpoint-hd) {
     
@@ -53,3 +58,4 @@ body {
   }
 
 }
+*/

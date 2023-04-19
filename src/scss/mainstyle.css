@@ -1,10 +1,7 @@
-@charset "UTF-8";
-/*    
-1280 × 720
+/*
 HD (1366 x 768),
 Full HD (1920 x 1080)
 4K (3840 x 2160) 
-
 */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap");
 /* Set your desired column gutter size */
@@ -41,5 +38,26 @@ body {
     max-width: 1920px;
   }
 }
+@media screen and (min-width: 3840px) {
+  .container {
+    max-width: 3840px;
+  }
+}
 
-/* Column classes for different screen sizes *//*# sourceMappingURL=mainstyle.css.map */
+/* Column classes for different screen sizes */
+/*
+.col {
+  @media screen and (min-width: $breakpoint-hd) {
+
+  }
+
+  @media screen and (min-width: $breakpoint-full-hd) {
+
+  }
+
+  @media screen and (min-width: $breakpoint-4k) {
+
+  }
+
+}
+*//*# sourceMappingURL=mainstyle.css.map */

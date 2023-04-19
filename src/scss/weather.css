@@ -49,11 +49,16 @@ body {
     max-width: 1920px;
   }
 }
+@media screen and (min-width: 3840px) {
+  .container {
+    max-width: 3840px;
+  }
+}
 
 /* Column classes for different screen sizes */
 * {
   box-sizing: border-box;
-  line-height: 1.25em;
+  line-height: 1.5em;
 }
 
 .clear {
@@ -75,9 +80,21 @@ h1 {
     font-size: 5rem;
   }
 }
+@media screen and (min-width: 3840px) {
+  h1 {
+    font-size: 15rem;
+    margin: 3rem 10rem;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   h2 {
     font-size: 4rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  h2 {
+    font-size: 10rem;
   }
 }
 
@@ -91,14 +108,19 @@ svg {
 }
 
 span svg {
-  height: 10px;
-  padding: 10px;
+  height: 1rem;
+  padding-right: 0.3rem;
   width: auto;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
   span svg {
     height: 1.2rem;
     margin: 10px;
+  }
+}
+@media screen and (min-width: 3840px) {
+  span svg {
+    height: 2.5rem;
   }
 }
 
@@ -107,34 +129,48 @@ span svg {
   box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
   background-color: #222831;
   color: white;
-  width: 115vh;
+  width: 85%;
   height: 30rem;
   padding: 0;
-  margin: 6rem auto;
-}
-@media screen and (min-width: 1366px) {
-  .container {
-    width: 115vh;
-    margin: 5rem auto;
-  }
+  margin: 3rem auto;
 }
 @media screen and (min-width: 1920px) {
   .container {
-    width: 120vh;
+    height: 40rem;
   }
 }
+@media screen and (min-width: 3840px) {
+  .container {
+    margin: 10rem auto;
+    height: 75rem;
+  }
+}
+
 .weather-side {
   position: relative;
   height: 30rem;
   border-radius: 25px;
   background-image: url("https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
-  width: 19rem;
+  background-size: cover;
+  width: 20rem;
   box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
   transition: transform 300ms ease;
   float: left;
 }
 .weather-side:hover {
   transform: translateZ(0) scale(1.02) perspective(1000px);
+}
+@media screen and (min-width: 1920px) {
+  .weather-side {
+    height: 40rem;
+    width: 30rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .weather-side {
+    height: 75rem;
+    width: 50rem;
+  }
 }
 
 .weather-gradient {
@@ -153,6 +189,12 @@ span svg {
   top: 25px;
   left: 25px;
 }
+@media screen and (min-width: 3840px) {
+  .date-container {
+    top: 3rem;
+    left: 3rem;
+  }
+}
 
 .date-dayname {
   margin: 0;
@@ -167,6 +209,11 @@ span svg {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 3840px) {
+  .date-day {
+    font-size: 6rem;
+  }
+}
 
 .location {
   display: inline-block;
@@ -177,6 +224,12 @@ span svg {
     font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 3840px) {
+  .location {
+    font-size: 3.5rem;
+    padding-top: 10px;
+  }
+}
 
 .location-icon {
   display: inline-block;
@@ -184,16 +237,33 @@ span svg {
   width: auto;
   margin-right: 5px;
 }
+@media screen and (min-width: 3840px) {
+  .location-icon {
+    height: 4rem;
+    margin: 0rem 3rem;
+  }
+}
 
 .weather-container {
   position: absolute;
   bottom: 25px;
   left: 25px;
 }
+@media screen and (min-width: 3840px) {
+  .weather-container {
+    bottom: 3rem;
+    left: 3rem;
+  }
+}
 
 .weather-icon.feather {
   height: 6rem;
   width: auto;
+}
+@media screen and (min-width: 3840px) {
+  .weather-icon.feather {
+    height: 15rem;
+  }
 }
 
 .weather-temp {
@@ -201,16 +271,31 @@ span svg {
   font-weight: 700;
   font-size: 4em;
 }
+@media screen and (min-width: 3840px) {
+  .weather-temp {
+    font-size: 8em;
+  }
+}
 
 .weather-desc {
   margin: 0;
+}
+@media screen and (min-width: 3840px) {
+  .weather-desc {
+    font-size: 4rem;
+  }
 }
 
 .info-side {
   position: relative;
   float: left;
   height: 100%;
-  padding-top: 25px;
+  padding: 2rem;
+}
+@media screen and (min-width: 3840px) {
+  .info-side {
+    width: 75%;
+  }
 }
 
 .today-info {
@@ -230,8 +315,13 @@ span svg {
   float: right;
 }
 @media screen and (min-width: 1920px) {
-  .today-info {
+  .today-info > div {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .today-info > div {
+    font-size: 4rem;
   }
 }
 
@@ -255,6 +345,11 @@ span svg {
   color: #222831;
   box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 3840px) {
+  .week-list > li:hover {
+    border-radius: 2rem;
+  }
+}
 .week-list > li .day-name {
   display: block;
   margin: 10px 0 0 0;
@@ -274,19 +369,49 @@ span svg {
 }
 @media screen and (min-width: 1920px) {
   .week-list > li .day-name {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .week-list > li .day-icon {
     height: 5rem;
   }
   .week-list > li .day-temp {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .week-list > li {
+    padding: 4rem;
+  }
+  .week-list > li .day-name {
+    font-size: 4rem;
+  }
+  .week-list > li .day-icon {
+    height: 15rem;
+  }
+  .week-list > li .day-temp {
+    font-size: 2.5rem;
   }
 }
 .week-list > li.active {
   background: white;
   color: #222831;
   border-radius: 10px;
+}
+@media screen and (min-width: 3840px) {
+  .week-list > li.active {
+    border-radius: 2rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .week-list {
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .week-list {
+    margin-top: 5rem;
+    border-radius: 2rem;
+  }
 }
 
 .location-container {
@@ -326,6 +451,11 @@ span svg {
 .nav.animation-reveal {
   animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
+@media screen and (min-width: 3840px) {
+  .nav {
+    padding: 0 8rem;
+  }
+}
 
 .nav-item {
   color: white;
@@ -336,6 +466,7 @@ span svg {
   z-index: 1;
   font-weight: 500;
   position: relative;
+  font-size: 1.5rem;
 }
 .nav-item:before {
   content: "";
@@ -360,6 +491,13 @@ span svg {
     font-size: 2.35rem;
   }
 }
+@media screen and (min-width: 3840px) {
+  .nav-item {
+    font-size: 5rem;
+    margin: 0 2rem;
+  }
+}
+
 .is-active:before {
   opacity: 1;
   bottom: 0;
