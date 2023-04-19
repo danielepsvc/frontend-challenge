@@ -16,11 +16,11 @@ jQuery(document).ready(function ($) {
     items: 3,
 
     center: false,
-    rewind: false,
+    rewind: true,
 
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
     freeDrag: false,
 
     margin: 0,
@@ -91,21 +91,5 @@ jQuery(document).ready(function ($) {
 
   /* Equal Heights using javascript */
   // $('.latest-blog-posts .thumbnail.item').matchHeight();
-
-});
-
-
-
-$(function () {
-  $(".news-ticker-images").bootstrapNews({
-    newsPerPage: 4,
-    autoplay: true,
-    pauseOnHover: true,
-    direction: 'up',
-    newsTickerInterval: 2000,
-    onToDo: function () {
-    }
-  });
-
 
 });

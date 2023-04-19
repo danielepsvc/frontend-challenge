@@ -12,12 +12,10 @@ body {
 
 /* Style the video: 100% width and height to cover the entire window */
 video {
-  position: fixed;
-  top: $top-grid;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   z-index: -1;
 
   -webkit-filter: brightness(40%);
@@ -135,20 +133,76 @@ h2 {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: #868686;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    svg {
+      height: 75px;
+      padding: 10px;
+      width: auto;
+    }
+
+    &:hover {
+      a {
+        // Styles for a element inside .box when .box is hovered
+        color: white;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-hd) {
+      p {
+        font-size: 1.2rem;
+      }
+
+      svg {
+        height: 4.5rem;
+        padding: 0.5rem;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-full-hd) {
+      p {
+        font-size: 1.8rem;
+      }
+
+      svg {
+        height: 6rem;
+        padding: 0.8rem;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-4k) {
+      p {
+        font-size: 4rem;
+      }
+
+      svg {
+        height: 10rem;
+        padding: 0rem;
+      }
+    }
   }
 
   .owl-nav {
     position: fixed;
-    top: 2.5rem;
+    top: 2rem;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: row;
+
+    @media screen and (min-width: $breakpoint-full-hd) {
+      top: 2.5rem;
+    }
 
     @media screen and (min-width: $breakpoint-4k) {
-      top: 8rem;
-      padding-left: 1rem;
-      padding-right: 4rem;
+      top: 6.5rem;
     }
   }
 
@@ -156,25 +210,21 @@ h2 {
   .owl-next {
     display: block;
     padding: 0 0.3rem;
-    font-size: 3em;
+    height: 1em;
     margin: 0;
     cursor: pointer;
     color: #868686;
 
     svg {
       height: 4.5rem;
-      padding: 1rem;
       width: auto;
 
-      @media screen and (min-width: $breakpoint-hd) {
-        font-size: 2.5rem;
-      }
       @media screen and (min-width: $breakpoint-full-hd) {
         height: 6rem;
       }
 
       @media screen and (min-width: $breakpoint-4k) {
-        font-size: 7rem;
+        height: 10rem;
       }
     }
 
@@ -184,7 +234,8 @@ h2 {
   }
 
   .owl-next {
-    right: 100%;
+    right: 0px;
+    position: fixed;
   }
 
   @media screen and (min-width: $breakpoint-4k) {

@@ -62,12 +62,11 @@ body {
 
 /* Style the video: 100% width and height to cover the entire window */
 video {
-  position: fixed;
-  top: 17vh;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
   -moz-filter: brightness(40%);
   -o-filter: brightness(40%);
@@ -173,27 +172,71 @@ video {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  justify-content: space-around;
+  text-align: center;
+}
+.owl-carousel .thumbnail a {
+  text-decoration: none;
+  color: #868686;
+}
+.owl-carousel .thumbnail p {
+  font-size: 1rem;
+}
+.owl-carousel .thumbnail svg {
+  height: 75px;
+  padding: 10px;
+  width: auto;
+}
+.owl-carousel .thumbnail:hover a {
+  color: white;
+}
+@media screen and (min-width: 1366px) {
+  .owl-carousel .thumbnail p {
+    font-size: 1.2rem;
+  }
+  .owl-carousel .thumbnail svg {
+    height: 4.5rem;
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .owl-carousel .thumbnail p {
+    font-size: 1.8rem;
+  }
+  .owl-carousel .thumbnail svg {
+    height: 6rem;
+    padding: 0.8rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .owl-carousel .thumbnail p {
+    font-size: 4rem;
+  }
+  .owl-carousel .thumbnail svg {
+    height: 10rem;
+    padding: 0rem;
+  }
 }
 .owl-carousel .owl-nav {
   position: fixed;
-  top: 2.5rem;
+  top: 2rem;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: row;
+}
+@media screen and (min-width: 1920px) {
+  .owl-carousel .owl-nav {
+    top: 2.5rem;
+  }
 }
 @media screen and (min-width: 3840px) {
   .owl-carousel .owl-nav {
-    top: 8rem;
-    padding-left: 1rem;
-    padding-right: 4rem;
+    top: 6.5rem;
   }
 }
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next {
   display: block;
   padding: 0 0.3rem;
-  font-size: 3em;
+  height: 1em;
   margin: 0;
   cursor: pointer;
   color: #868686;
@@ -201,14 +244,7 @@ video {
 .owl-carousel .owl-prev svg,
 .owl-carousel .owl-next svg {
   height: 4.5rem;
-  padding: 1rem;
   width: auto;
-}
-@media screen and (min-width: 1366px) {
-  .owl-carousel .owl-prev svg,
-  .owl-carousel .owl-next svg {
-    font-size: 2.5rem;
-  }
 }
 @media screen and (min-width: 1920px) {
   .owl-carousel .owl-prev svg,
@@ -219,7 +255,7 @@ video {
 @media screen and (min-width: 3840px) {
   .owl-carousel .owl-prev svg,
   .owl-carousel .owl-next svg {
-    font-size: 7rem;
+    height: 10rem;
   }
 }
 .owl-carousel .owl-prev:hover,
@@ -227,7 +263,8 @@ video {
   color: white;
 }
 .owl-carousel .owl-next {
-  right: 100%;
+  right: 0px;
+  position: fixed;
 }
 @media screen and (min-width: 3840px) {
   .owl-carousel {

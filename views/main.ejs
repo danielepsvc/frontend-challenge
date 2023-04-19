@@ -1,11 +1,10 @@
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Daniele Carvalho">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daniele Carvalho" />
 
     <link rel="shortcut icon" href="#" />
 
@@ -13,141 +12,116 @@
     <meta name="keywords" content="" />
 
     <!-- Vendor CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css"
+    />
 
     <!--link rel="stylesheet" href="./src/scss/mainstyle.css"-->
-    <link rel="stylesheet" href="./src/scss/main.css">
+    <link rel="stylesheet" href="./src/scss/main.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div id="owl-demo-2" class="owl-carousel owl-theme">
+      <div class="thumbnail item">
+        <a href="<%= app0URL; %>">
+          <i data-feather="<%= app0Icon; %>"></i>
+          <p><%= app0Title; %></p>
+        </a>
+      </div>
 
-        <article class="thumbnail item">
-            <div class="box">
-                <a href="<%= app0URL; %>">
-                    <i data-feather="<%= app0Icon; %>"></i>
-                    <p><%= app0Title; %></p>
-                </a>
-            </div>
-        </article>
+      <div class="thumbnail item">
+        <a href="<%= app1URL; %>">
+          <i data-feather="<%= app1Icon; %>"></i>
+          <p><%= app1Title; %></p>
+        </a>
+      </div>
 
-        <article class="thumbnail item">
-            <div class="box">
-                <a href="<%= app1URL; %>">
-                    <i data-feather="<%= app1Icon; %>"></i>
-                    <p><%= app1Title; %></p>
-                </a>
-            </div>
-        </article>
+      <div class="thumbnail item">
+        <a href="<%= app2URL; %>">
+          <i data-feather="<%= app2Icon; %>"></i>
+          <p><%= app2Title; %></p>
+        </a>
+      </div>
 
-        <article class="thumbnail item">
-            <div class="box">
-                <a href="<%= app2URL; %>">
-                    <i data-feather="<%= app2Icon; %>"></i>
-                    <p><%= app2Title; %></p>
-                </a>
-            </div>
-        </article>
+      <div class="thumbnail item">
+        <a href="<%= app3URL; %>">
+          <i data-feather="<%= app3Icon; %>"></i>
+          <p><%= app3Title; %></p>
+        </a>
+      </div>
 
-        <article class="thumbnail item">
-            <div class="box">
-                <a href="<%= app3URL; %>">
-                    <i data-feather="<%= app3Icon; %>"></i>
-                    <p><%= app3Title; %></p>
-                </a>
-            </div>
-        </article>
+      <div class="thumbnail item">
+        <a href="<%= app4URL; %>">
+          <i data-feather="<%= app4Icon; %>"></i>
+          <p><%= app4Title; %></p>
+        </a>
+      </div>
 
-        <article class="thumbnail item">
-            <div class="box">
-                <a href="<%= app4URL; %>">
-                    <i data-feather="<%= app4Icon; %>"></i>
-                    <p><%= app4Title; %></p>
-                </a>
-            </div>
-        </article>
+      <div class="thumbnail item">
+        <a href="<%= app5URL; %>">
+          <i data-feather="<%= app5Icon; %>"></i>
+          <p><%= app5Title; %></p>
+        </a>
+      </div>
 
-        <article class="thumbnail item">
-            <div class="box">
-                <a href="<%= app5URL; %>">
-                    <i data-feather="<%= app5Icon; %>"></i>
-                    <p><%= app5Title; %></p>
-                </a>
-            </div>
-        </article>
-
-        <article class="thumbnail item">
-            <div class="box">
-                <a href="<%= app6URL; %>">
-                    <i data-feather="<%= app6Icon; %>"></i>
-                    <p><%= app6Title; %></p>
-                </a>
-            </div>
-        </article>
-
+      <div class="thumbnail item">
+        <a href="<%= app6URL; %>">
+          <i data-feather="<%= app6Icon; %>"></i>
+          <p><%= app6Title; %></p>
+        </a>
+      </div>
     </div>
-
 
     <!-- The video -->
     <video autoplay muted loop>
-        <source src="../src/videos/waves.mp4" type="video/mp4">
+      <source src="../src/videos/waves.mp4" type="video/mp4" />
     </video>
 
     <div class="row m-4">
-        <div class="col mt-4">
-            <h1>Room <%= room %></h1>
-        </div>
-        <div class="col text-end">
-            <h1><%= today %> | <%= hour %></h1>
-            <h2>
-                <span class="weatherIcon">
-                    <i class="<%= weatherIcon %>"></i>
-                </span>
-                <%= weatherTemp %>
-            </h2>
+      <div class="col mt-4">
+        <h1>Room <%= room %></h1>
+      </div>
+      <div class="col text-end">
+        <h1><%= today %> | <%= hour %></h1>
+        <h2>
+          <span class="weatherIcon">
+            <i class="<%= weatherIcon %>"></i>
+          </span>
+          <%= weatherTemp %>
+        </h2>
 
-
-
-            <div class="mini-container">
-
-                <article class="card">
-                    <div>
-                        <img src="<%= news1Icon %>">
-                    </div>
-                    <div>
-                        <h4><%= news1Title %></h4>
-                        <h6><%= news1Line1 %></h6>
-                        <h6><%= news1Line2 %></h6>
-                        <p class="footnote"><%= news1note %></p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div>
-                        <img src="<%= news2Icon %>">
-                    </div>
-                    <div>
-                        <h4><%= news2Title %></h4>
-                        <h6><%= news2Line1 %></h6>
-                        <h6><%= news2Line2 %></h6>
-                        <p class="footnote"><%= news2note %></p>
-                    </div>
-                </article>
-
-
-
+        <div class="mini-container">
+          <article class="card">
+            <div>
+              <img src="<%= news1Icon %>" />
             </div>
+            <div>
+              <h4><%= news1Title %></h4>
+              <h6><%= news1Line1 %></h6>
+              <h6><%= news1Line2 %></h6>
+              <p class="footnote"><%= news1note %></p>
+            </div>
+          </article>
 
-
-
-
-
+          <article class="card">
+            <div>
+              <img src="<%= news2Icon %>" />
+            </div>
+            <div>
+              <h4><%= news2Title %></h4>
+              <h6><%= news2Line1 %></h6>
+              <h6><%= news2Line2 %></h6>
+              <p class="footnote"><%= news2note %></p>
+            </div>
+          </article>
         </div>
+      </div>
     </div>
-
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -155,9 +129,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="../src/js/main.js"></script>
-	<script src="../src/js/featherIcons.js"></script>
-   
-
-</body>
-
+    <script src="../src/js/featherIcons.js"></script>
+  </body>
 </html>
