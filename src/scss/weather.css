@@ -118,6 +118,19 @@ a:hover {
   height: 5rem;
   width: auto;
   padding: 1rem;
+  color: white;
+}
+@media screen and (min-width: 1920px) {
+  .return {
+    height: 7rem;
+    margin: 0rem;
+  }
+}
+@media screen and (min-width: 3840px) {
+  .return {
+    height: 12rem;
+    margin: 5rem;
+  }
 }
 
 span svg {
