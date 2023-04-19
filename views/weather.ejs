@@ -23,42 +23,46 @@
 <body>
     <h1>Weather</h1>
     <nav class="nav">
-        <a href="#" class="nav-item is-active">Lisboa</a>
-        <a href="#" class="nav-item">Barcelona</a>
-        <a href="#" class="nav-item">Madrid</a>
-        <a href="#" class="nav-item">London</a>
-        <a href="#" class="nav-item">Paris</a>
-        <a href="#" class="nav-item">Melborne</a>
+        <a href="#" class="nav-item is-active"><%= $place1 %></a>
+        <a href="#" class="nav-item"><%= $place2 %></a>
+        <a href="#" class="nav-item"><%= $place3 %></a>
+        <a href="#" class="nav-item"><%= $place4 %></a>
+        <a href="#" class="nav-item"><%= $place5 %></a>
+        <a href="#" class="nav-item"><%= $place6 %></a>
     </nav>
+
+    <a href="<%= $return %>">
+        <i class="return" data-feather="corner-up-left"></i>
+    </a>
 
     <div class="container">
         <div class="weather-side">
             <div class="weather-gradient"></div>
             <div class="date-container">
-                <h2 class="date-dayname">Sunday</h2>
-                <span class="date-day">15 Jan 2019</span>
+                <h2 class="date-dayname"><%= $weather1WD %></h2>
+                <span class="date-day"><%= $weather1Date %></span>
                 <i class="location-icon" data-feather="map-pin"></i>
-                <span class="location">Lisboa, PT</span>
+                <span class="location"><%= $weather1Place %></span>
             </div>
             <div class="weather-container">
-                <i class="weather-icon" data-feather="sun"></i>
-                <h1 class="weather-temp">25°C</h1>
-                <h3 class="weather-desc">Sunny</h3>
+                <i class="weather-icon" data-feather="<%= $weather1Icon %>"></i>
+                <h1 class="weather-temp"><%= $weather1Temp %></h1>
+                <h3 class="weather-desc"><%= $weather1Desc %></h3>
             </div>
         </div>
         <div class="info-side">
             <div class="today-info-container">
                 <div class="today-info">
                     <div class="precipitation">
-                        <span class="title">PRECIPITATION</span><span class="value">0 %</span>
+                        <span class="title">PRECIPITATION</span><span class="value"><%= $precipitation %></span>
                         <div class="clear"></div>
                     </div>
                     <div class="humidity">
-                        <span class="title">HUMIDITY</span><span class="value">34 %</span>
+                        <span class="title">HUMIDITY</span><span class="value"><%= $humidity %></span>
                         <div class="clear"></div>
                     </div>
                     <div class="wind">
-                        <span class="title">WIND</span><span class="value">0 km/h</span>
+                        <span class="title">WIND</span><span class="value"><%= $wind %></span>
                         <div class="clear"></div>
                     </div>
                 </div>
@@ -72,29 +76,29 @@
                         <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
                     </li>
                     <li>
-                        <i class="day-icon" data-feather="sun"></i>
-                        <span class="day-name">Tuesday</span>
-                        <span class="day-temp"><i data-feather="arrow-up"></i>29°C/ 65ºF</span>
-                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                        <i class="day-icon" data-feather="<%= $miniWeather1Icon %>"></i>
+                        <span class="day-name"><%= $miniWeather1Day %></span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i><%= $miniWeather1Max %></span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i><%= $miniWeather1Min %></span>
                     </li>
                     </li>
                     <li>
-                        <i class="day-icon" data-feather="cloud"></i>
-                        <span class="day-name">Wednesday</span>
-                        <span class="day-temp"><i data-feather="arrow-up"></i>21°C/ 61ºF</span>
-                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                        <i class="day-icon" data-feather="<%= $miniWeather2Icon %>"></i>
+                        <span class="day-name"><%= $miniWeather2Day %></span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i><%= $miniWeather2Max %></span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i><%= $miniWeather2Min %></span>
                     </li>
                     <li>
-                        <i class="day-icon" data-feather="cloud-snow"></i>
-                        <span class="day-name">Thuesday</span>
-                        <span class="day-temp"><i data-feather="arrow-up"></i>20°C/ 111ªF</span>
-                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                        <i class="day-icon" data-feather="<%= $miniWeather3Icon %>"></i>
+                        <span class="day-name"><%= $miniWeather3Day %></span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i><%= $miniWeather3Max %></span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i><%= $miniWeather3Min %></span>
                     </li>
                     <li>
-                        <i class="day-icon" data-feather="cloud-rain"></i>
-                        <span class="day-name">Friday</span>
-                        <span class="day-temp"><i data-feather="arrow-up"></i>29°C/ 123ªF</span>
-                        <span class="day-temp"><i data-feather="arrow-down"></i>14°C/ 27ªF</span>
+                        <i class="day-icon" data-feather="<%= $miniWeather4Icon %>"></i>
+                        <span class="day-name"><%= $miniWeather4Day %></span>
+                        <span class="day-temp"><i data-feather="arrow-up"></i><%= $miniWeather4Max %></span>
+                        <span class="day-temp"><i data-feather="arrow-down"></i><%= $miniWeather4Min %></span>
                     </li>
                     <div class="clear"></div>
                 </ul>

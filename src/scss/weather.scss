@@ -42,9 +42,13 @@ a:hover {
   color: white;
 }
 
-svg {
-  height: 1rem;
+.return {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 5rem;
   width: auto;
+  padding: 1rem;
 }
 
 span {
@@ -271,13 +275,9 @@ span {
       -webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
       box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
 
-
-
       @media screen and (min-width: $breakpoint-4k) {
         border-radius: 2rem;
       }
-
-
     }
     .day-name {
       display: block;

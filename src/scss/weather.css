@@ -4,8 +4,6 @@
 /* Set your desired Full HD breakpoint */
 /* Set your desired 4K breakpoint */
 /* HOME */
-/* MAIN */
-/* WEATHER */
 /*
 HD (1366 x 768),
 Full HD (1920 x 1080)
@@ -17,8 +15,6 @@ Full HD (1920 x 1080)
 /* Set your desired Full HD breakpoint */
 /* Set your desired 4K breakpoint */
 /* HOME */
-/* MAIN */
-/* WEATHER */
 * {
   margin: 0;
 }
@@ -115,9 +111,13 @@ a:hover {
   color: white;
 }
 
-svg {
-  height: 1rem;
+.return {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 5rem;
   width: auto;
+  padding: 1rem;
 }
 
 span svg {
