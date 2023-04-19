@@ -72,7 +72,7 @@ video {
   -moz-filter: brightness(40%);
   -o-filter: brightness(40%);
   -ms-filter: brightness(40%);
-  filter: brightness(40%);
+  filter: brightness(45%);
 }
 
 @media screen and (min-width: 1920px) {
@@ -176,7 +176,7 @@ video {
 }
 .owl-carousel .owl-nav {
   position: fixed;
-  top: 3.5rem;
+  top: 2.5rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -198,25 +198,27 @@ video {
   cursor: pointer;
   color: #868686;
 }
-.owl-carousel .owl-prev i,
-.owl-carousel .owl-next i {
-  font-size: 2rem;
+.owl-carousel .owl-prev svg,
+.owl-carousel .owl-next svg {
+  height: 4.5rem;
+  padding: 1rem;
+  width: auto;
 }
 @media screen and (min-width: 1366px) {
-  .owl-carousel .owl-prev i,
-  .owl-carousel .owl-next i {
+  .owl-carousel .owl-prev svg,
+  .owl-carousel .owl-next svg {
     font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1920px) {
-  .owl-carousel .owl-prev i,
-  .owl-carousel .owl-next i {
-    font-size: 4rem;
+  .owl-carousel .owl-prev svg,
+  .owl-carousel .owl-next svg {
+    height: 6rem;
   }
 }
 @media screen and (min-width: 3840px) {
-  .owl-carousel .owl-prev i,
-  .owl-carousel .owl-next i {
+  .owl-carousel .owl-prev svg,
+  .owl-carousel .owl-next svg {
     font-size: 7rem;
   }
 }

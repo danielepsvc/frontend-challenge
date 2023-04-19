@@ -24,7 +24,7 @@ video {
   -moz-filter: brightness(40%);
   -o-filter: brightness(40%);
   -ms-filter: brightness(40%);
-  filter: brightness(40%);
+  filter: brightness(45%);
 }
 
 h1 {
@@ -139,7 +139,7 @@ h2 {
 
   .owl-nav {
     position: fixed;
-    top: 3.5rem;
+    top: 2.5rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -161,14 +161,16 @@ h2 {
     cursor: pointer;
     color: #868686;
 
-    i {
-      font-size: 2rem;
+    svg {
+      height: 4.5rem;
+      padding: 1rem;
+      width: auto;
 
       @media screen and (min-width: $breakpoint-hd) {
         font-size: 2.5rem;
       }
       @media screen and (min-width: $breakpoint-full-hd) {
-        font-size: 4rem;
+        height: 6rem;
       }
 
       @media screen and (min-width: $breakpoint-4k) {
